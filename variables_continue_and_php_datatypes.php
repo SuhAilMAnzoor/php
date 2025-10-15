@@ -11,7 +11,7 @@
     <title>Variables continue</title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-">
   <a class="navbar-brand" href="#">PHP</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,48 @@
             <li>Variables in php are case censitive like $name and $Name is two different varibales</li>
             <?php $name = "Ahmed"; echo $name;?>
     </div>
-
+     
+      <?php
+      echo "<H1>Data types in PHP</H1>";
+          echo "<h3>1.String</h3>";  // String =>  Sequence of Charachters
+            $name = "Sohail";  // << String Datatype
+            $friend = 'Ahmed';
+            echo "$name";
+            echo "<br>";
+            echo $friend;
+            echo "<br>";
+      echo "<h3>2.Integer</h3>"; // Integer  - Non decimal Number 
+            $income = 455;
+            $debit = -455;
+            echo $income;
+            echo "<br>";
+            echo $debit;
+      echo "<h3>3.Float</h3>";  // Float - decimal point number
+            $income = 344.5;
+            $debits = -45.5;
+            echo $income;
+            echo "<br>";
+            echo $debits;
+            echo "<br>";
+      echo "<h3>4.Boolean</h3>"; // Boolean can be either true or false
+            $x = true;
+            $y = false;
+            echo $x;
+            echo "<br>";
+            echo var_dump($y);  // var_dump() , function is to check datatype of varibale
+      echo "<h3>5.Object</h3>";
+            echo "Object -> is Instance of class <br>";
+            echo "Example >> Employee is class ---> and Sohail can be one object of organisation";
+            echo "<br>";
+      echo "<h3>6.Array</h3>"; // Array - Used to store multiple values in a single variable 
+            $friendsOfMine = array("Sohail", "Waqar", "Sajjad");
+            echo var_dump($friendsOfMine) . "<br>" . "<br>";
+            echo "value of index at the 0 postion is: " . $friendsOfMine[0] .  "<br>";
+      echo "<h3>7.NULL</h3>"; // null means nothing inside
+            $name = NULL;
+            echo $name;   // nothing print on screen, use var_dump() function to check its datatype
+            echo var_dump($name);
+      ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
