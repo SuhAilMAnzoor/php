@@ -59,10 +59,8 @@
       </div>';
       // Submit these to a database
     }
-
     
 ?>
-
 <div class="container mt-3">
 <h1>Please enter your email and password</h1>
     <form action="/php/get_post.php" method="post">
